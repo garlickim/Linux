@@ -8,6 +8,11 @@ ex) 현재 위치 /home/garlickim/ 에서 .bak이라는 파일을 모두 지우�
 ls | grep ".bak" | xargs rm
 ~~~
 
+ex) .bak이라는 파일을 ./test/ 하위로 Copy 하고 싶을 때,
+~~~ bash
+ls | grep '.bak' | xargs -i cp {} ./test/
+~~~
+
 
 <details>
 <summary>더보기</summary>
